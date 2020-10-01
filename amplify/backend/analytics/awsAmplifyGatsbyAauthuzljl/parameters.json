@@ -1,0 +1,22 @@
+{
+    "appName": "awsAmplifyGatsbyAauthuzljl",
+    "roleName": "pinpointLambdaRoleddd5b104",
+    "cloudformationPolicyName": "cloudformationPolicyddd5b104",
+    "cloudWatchPolicyName": "cloudWatchPolicyddd5b104",
+    "pinpointPolicyName": "pinpointPolicyddd5b104",
+    "authPolicyName": "pinpoint_amplify_ddd5b104",
+    "unauthPolicyName": "pinpoint_amplify_ddd5b104",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "appId": "32c60945d8a64179b78771de33000854"
+}
