@@ -1,22 +1,35 @@
 {
   "auth": {
-    "awsamplifygatsbyauthbfc324b3": {
+    "cognitof3ab637a": {
       "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "notifications": {
+    "aws-amplify-gatsby-authuzljl": {
+      "service": "Pinpoint",
+      "channels": [
+        "Email"
+      ]
+    }
+  },
+  "analytics": {
+    "awsAmplifyGatsbyAauthuzljl": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
     }
   },
   "api": {
-    "awsamplifygatsbyauth": {
+    "awsAmplifyGatsbyAuth": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authawsamplifygatsbyauthbfc324b3"
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "APIKeyDescription"
             }
           },
           "additionalAuthenticationProviders": []
