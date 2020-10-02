@@ -2,7 +2,8 @@
   "auth": {
     "cognitof3ab637a": {
       "service": "Cognito",
-      "providerPlugin": "awscloudformation"
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
     }
   },
   "notifications": {
